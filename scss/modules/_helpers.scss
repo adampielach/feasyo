@@ -1,0 +1,26 @@
+.divider-top {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	left: 0px;
+	background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, $base 50%);
+}
+
+.divider-bottom {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	left: 0px;
+	background: linear-gradient(to left bottom, $base 49%, rgba(255, 255, 255, 0) 50%);
+}
+
+.bg-accented {
+	background-image: linear-gradient(to top, $base 9.3%, $base 100%);
+}
+
+.section-heading {
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 700;
+}

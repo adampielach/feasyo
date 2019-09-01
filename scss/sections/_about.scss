@@ -1,0 +1,18 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.about-content {
+		width: 50%;
+	}
+	.about-image {
+		width: 30%;
+		height: 30%;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

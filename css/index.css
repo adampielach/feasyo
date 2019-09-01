@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf"), url("../fonts/Roboto-RegularItalic.ttf"), url("../fonts/Roboto-Bold.ttf"), url("../fonts/Roboto-BoldItalic.ttf"); }
+
+.divider-top {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #20c997 50%); }
+
+.divider-bottom {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to left bottom, #20c997 49%, rgba(255, 255, 255, 0) 50%); }
+
+.bg-accented {
+  background-image: linear-gradient(to top, #20c997 9.3%, #20c997 100%); }
+
+.section-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body * {
+  box-sizing: border-box; }
+  body *:focus {
+    outline-color: #20c997; }
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+  color: white; }
+
+.navbar-nav .active > .nav-link {
+  color: #20c997 !important; }
+
+.navbar-nav .nav-link:hover {
+  color: #1cb386 !important; }
+
+.navbar-brand img {
+  width: 70%; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.5rem; } }
+
+.btn-feasyo {
+  background: #20c997;
+  border-color: #20c997;
+  color: white; }
+  .btn-feasyo:hover {
+    color: white;
+    background: #1cb386; }
+
+.kv {
+  display: flex;
+  align-items: center;
+  color: black;
+  position: relative;
+  height: 90vh;
+  margin-bottom: -6rem; }
+
+.kv-content {
+  width: 50%; }
+  .kv-content h1 {
+    line-height: 3.5rem;
+    font-weight: 700; }
+  .kv-content p.lead {
+    color: #26dca6; }
+
+.kv-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+  .kv-image img {
+    width: 190%; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .about .about-content {
+    width: 50%; }
+  .about .about-image {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    overflow: hidden; }
+    .about .about-image img {
+      width: 100%;
+      height: auto; }
+
+/*# sourceMappingURL=maps/index.css.map */

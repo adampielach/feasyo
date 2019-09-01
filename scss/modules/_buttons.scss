@@ -1,0 +1,9 @@
+.btn-feasyo {
+	background: $base;
+	border-color: $base;
+	color: white;
+	&:hover {
+		color: white;
+		background: $accent;
+	}
+}
