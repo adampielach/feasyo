@@ -7,17 +7,17 @@
   height: 100px;
   position: relative;
   left: 0px;
-  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #20c997 50%); }
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #3fbfff 50%); }
 
 .divider-bottom {
   width: 100%;
   height: 100px;
   position: relative;
   left: 0px;
-  background: linear-gradient(to left bottom, #20c997 49%, rgba(255, 255, 255, 0) 50%); }
+  background: linear-gradient(to left bottom, #3fbfff 49%, rgba(255, 255, 255, 0) 50%); }
 
 .bg-accented {
-  background-image: linear-gradient(to top, #20c997 9.3%, #20c997 100%); }
+  background-image: linear-gradient(to top, #3fbfff 9.3%, #3fbfff 100%); }
 
 .section-heading {
   width: 100%;
@@ -33,7 +33,7 @@ body {
 body * {
   box-sizing: border-box; }
   body *:focus {
-    outline-color: #20c997; }
+    outline-color: #3fbfff; }
 
 body {
   overflow-x: hidden;
@@ -41,10 +41,10 @@ body {
   color: white; }
 
 .navbar-nav .active > .nav-link {
-  color: #20c997 !important; }
+  color: #3fbfff !important; }
 
 .navbar-nav .nav-link:hover {
-  color: #1cb386 !important; }
+  color: #26b7ff !important; }
 
 .navbar-brand img {
   width: 70%; }
@@ -54,28 +54,22 @@ body {
     padding-left: 1.5rem; } }
 
 .btn-feasyo {
-  background: #20c997;
-  border-color: #20c997;
+  background: #3fbfff;
+  border-color: #3fbfff;
   color: white; }
   .btn-feasyo:hover {
     color: white;
-    background: #1cb386; }
+    background: #26b7ff; }
 
 .kv {
+  color: black;
   display: flex;
   align-items: center;
-  color: black;
-  position: relative;
-  height: 90vh;
-  margin-bottom: -6rem; }
-  .kv::after {
-    content: "";
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #20c997 50%); }
+  position: relative; }
+  @media (max-width: 768px) {
+    .kv {
+      margin-top: 10rem;
+      flex-direction: column; } }
 
 .kv-content {
   width: 50%; }
@@ -83,15 +77,29 @@ body {
     line-height: 3.5rem;
     font-weight: 700; }
   .kv-content p.lead {
-    color: #26dca6; }
+    color: #59c8ff; }
+  @media (max-width: 768px) {
+    .kv-content {
+      width: 100%; } }
 
 .kv-image {
   width: 50%;
   display: flex;
+  bottom: -85px;
+  position: relative;
   justify-content: center;
   overflow: hidden; }
   .kv-image img {
     width: 190%; }
+  @media (max-width: 992px) {
+    .kv-image {
+      bottom: -135px; } }
+  @media (max-width: 825px) {
+    .kv-image {
+      bottom: -140px; } }
+  @media (max-width: 768px) {
+    .kv-image {
+      bottom: -60px; } }
 
 .about {
   display: flex;

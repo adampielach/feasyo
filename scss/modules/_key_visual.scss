@@ -1,47 +1,51 @@
 .kv {
+  color: black;
   display: flex;
   align-items: center;
-  color: black;
   position: relative;
-  height: 90vh;
-  // background: no-repeat url('../img/kv-background.png');
-  // background-position: 15vw;
-  // background-size: contain;
-  margin-bottom: -6rem;
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    background: linear-gradient(
-      to left bottom,
-      rgba(255, 255, 255, 0) 49%,
-      #20c997 50%
-    );
+  @media (max-width: 768px) {
+    margin-top: 10rem;
+    flex-direction: column;
   }
 }
+
+// .kv-wrapper {
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+// }
 
 .kv-content {
   width: 50%;
   h1 {
     line-height: 3.5rem;
     font-weight: 700;
-    // max-width: 60%;
   }
   p.lead {
     color: lighten($base, 5%);
-    // max-width: 40%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
 
 .kv-image {
   width: 50%;
   display: flex;
+  bottom: -85px;
+  position: relative;
   justify-content: center;
   overflow: hidden;
   img {
     width: 190%;
+  }
+  @media (max-width: 992px) {
+    bottom: -135px;
+  }
+  @media (max-width: 825px) {
+    bottom: -140px;
+  }
+  @media (max-width: 768px) {
+    bottom: -60px;
   }
 }
