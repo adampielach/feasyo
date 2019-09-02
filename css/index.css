@@ -68,6 +68,14 @@ body {
   position: relative;
   height: 90vh;
   margin-bottom: -6rem; }
+  .kv::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #20c997 50%); }
 
 .kv-content {
   width: 50%; }

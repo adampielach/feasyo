@@ -1,34 +1,47 @@
 .kv {
-	display: flex;
-	align-items: center;
-	color: black;
-	position: relative;
-	height: 90vh;
-	// background: no-repeat url('../img/kv-background.png');
-	// background-position: 15vw;
-	// background-size: contain;
-	margin-bottom: -6rem;
+  display: flex;
+  align-items: center;
+  color: black;
+  position: relative;
+  height: 90vh;
+  // background: no-repeat url('../img/kv-background.png');
+  // background-position: 15vw;
+  // background-size: contain;
+  margin-bottom: -6rem;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    background: linear-gradient(
+      to left bottom,
+      rgba(255, 255, 255, 0) 49%,
+      #20c997 50%
+    );
+  }
 }
 
 .kv-content {
-	width: 50%;
-	h1 {
-		line-height: 3.5rem;
-		font-weight: 700;
-		// max-width: 60%;
-	}
-	p.lead {
-		color: lighten($base, 5%);
-		// max-width: 40%;
-	}
+  width: 50%;
+  h1 {
+    line-height: 3.5rem;
+    font-weight: 700;
+    // max-width: 60%;
+  }
+  p.lead {
+    color: lighten($base, 5%);
+    // max-width: 40%;
+  }
 }
 
 .kv-image {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	img {
-		width: 190%;
-	}
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  img {
+    width: 190%;
+  }
 }
